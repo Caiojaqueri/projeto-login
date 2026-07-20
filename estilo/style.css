@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/* Paletas de cores 
+#023E73 - fundo  
+#1575A7 - azul claro
+#730C02 - vinho 
+*/
+
 * {
     font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     margin: 0px;
@@ -8,7 +14,7 @@
 }
 
 body, html {
-    background-color: #5f2c82;
+    background-color: #023E73;
     height: 100vh;
     width: 100vw;
 }
@@ -30,11 +36,20 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.441);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.447);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
-    background: #5f2c82 url("../imagens/predio.jpg") no-repeat;
+    display:block;
+    background: #04264C url("../imagens/predio2.jpg") no-repeat;
     background-size: cover;
     height: 200px;
 }
+
+section#login > div#form {
+    padding: 10px;
+    display: block;
+}   
